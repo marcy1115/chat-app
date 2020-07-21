@@ -1,0 +1,58 @@
+<%# チャットルーム概要  チャット終了ボタンテンプレート%>
+<div class = "chat-header" >    <%# チャットルーム概要、チャット終了ボタン部 %>
+  <div class = "left-header" >
+    <div class = "chat-title" >
+      CreateRoomName
+    </div>
+  </div>
+  <div class = "right-header" >
+    <div class = "chat-exit" >
+      <a href = "#" >チャットを終了する</a>
+    </div>
+  </div>
+</div>
+
+<%# チャットメッセージ部 %>
+<div class = "chat-messages" > 
+  <div class = "chat-message" >
+    <div class = "upper-message" >
+      <div class = "message-user" >
+        Tom
+      </div>
+      <div class = "message-date" >
+        2020/07/21(Wed) 12:43:05
+      </div>
+    </div>
+    <div class = "lower-message" >
+      <div class = "message-content" >
+        おはよう
+      </div>
+    </div>
+  </div>
+
+  <div class = "chat-message" >
+    <div class = "upper-message" >
+      <div class = "message-user" >
+        Sim
+      </div>
+      <div class = "message-date" >
+        2020/07/21(Wed) 12:43:30
+      </div>
+    </div>
+    <div class = "lower-message" >
+      <div class = "message-content" >
+        Hello
+      </div>
+    </div>
+  </div>
+</div>
+<div class = "chat-form" >
+  <div class = "form-input" >
+    <input class = "form-message" placeholder = "type a message" >
+    <label class = "form-image" >
+      <span class = "image-file">画像</span>
+      <input type = "file" class = "hidden" >
+    </label>
+  </div>
+  <input class = "form-submit" type = "submit" value = "送信" >
+</div>
