@@ -1,36 +1,9 @@
-<%# サイドバー、メインチャット画面view呼び出しメソッド %>
-
+<%# サイドバー %>
 <div class = "wrapper" >            <%# 全体部 %>
   <div class = "side-bar" >         <%# サイドバー部 %>
     <%= render "side_bar" %>        <%# サイドバー呼び出し(_side_bar.html.erb) %>
-    <div class = "side-header" >    <%# サイドバー  上部部分 %>
-      <div class = "side-user" >    <%# サイドバー  ログインユーザー部 %>
-        <a href = "#" >UserName</a>
-      </div>
-      <div class = "side-create" >  <%# サイドバー  チャットルーム作成部 %>
-        <a href = "#" >チャットを作成する</a>
-      </div>
-    </div>
-    <div class = "side-rooms" >     <%# サイドバー  ルーム部 %>
-      <div class = "room" >
-        <div class = "room-name" >
-          <a href = "#" >CreateRoom1</a>
-        </div>
-      </div>
-      <div class = "room" >
-        <div class = "room-name" >
-          <a href = "#" >CreateRoom2</a>
-        </div>
-      </div>
   </div>
-
   <div class = "chat" >       <%# チャット部 %>
     <%= render "main_chat" %> <%# メインチャット画面呼び出し(_main_chat.html.erb) %>
-    <div class = "chat-header" >
-    </div>
-    <div class = "chat-main" >
-    </div>
-    <div class = "chat-footer" >
-    </div>
   </div>
 </div>
