@@ -1,6 +1,8 @@
 <div class = "side-header" >    <%# サイドバー  上部部分 %>
   <div class = "side-user" >    <%# サイドバー  ログインユーザー部 %>
-    <a href = "#" >UserName</a>
+    <%= link_to edit_user_path( current_user ) do %>      <%# users#edit(名前編集画面)と連携 %>
+      <%= current_user.name %>                            <%# ログインユーザーの名前表示 %>
+    <% end %>
   </div>
   <div class = "side-create" >  <%# サイドバー  チャットルーム作成部 %>
     <a href = "#" >チャットを作成する</a>
