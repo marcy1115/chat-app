@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     if current_user.update( user_params )       #user_paramsの値をアップデートしたら
       redirect_to root_path                     #ルート(チャット画面)へ リダイレクト
     else
-      render :edit                              #edit(ログイン画面)に戻る
+      render :edit                              #edit(名前編集画面)に戻る
     end
   end
 
