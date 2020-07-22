@@ -46,13 +46,16 @@
     </div>
   </div>
 </div>
-<div class = "chat-form" >
+
+<%# チャットフォーム部 %>
+<%= form_with model: [ @room, @message ], html: { class: 'chat-form' }, local: true do | f | %>
   <div class = "form-input" >
-    <input class = "form-message" placeholder = "type a message" >
+    <%= f.text_field :content, class: 'form-message', placeholder: 'Type a message' %>
     <label class = "form-image" >
       <span class = "image-file">画像</span>
-      <input type = "file" class = "hidden" >
+      <%= f.file_field :image, class: "hidden" %>
     </label>
   </div>
-  <input class = "form-submit" type = "submit" value = "送信" >
+  <%= f.submit "送信", class: "form-submit" %>
 </div>
+<% end %>
