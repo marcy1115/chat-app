@@ -14,37 +14,7 @@
 
 <%# チャットメッセージ部 %>
 <div class = "chat-messages" > 
-  <div class = "chat-message" >
-    <div class = "upper-message" >
-      <div class = "message-user" >
-        Tom
-      </div>
-      <div class = "message-date" >
-        2020/07/21(Wed) 12:43:05
-      </div>
-    </div>
-    <div class = "lower-message" >
-      <div class = "message-content" >
-        おはよう
-      </div>
-    </div>
-  </div>
-
-  <div class = "chat-message" >
-    <div class = "upper-message" >
-      <div class = "message-user" >
-        Sim
-      </div>
-      <div class = "message-date" >
-        2020/07/21(Wed) 12:43:30
-      </div>
-    </div>
-    <div class = "lower-message" >
-      <div class = "message-content" >
-        Hello
-      </div>
-    </div>
-  </div>
+  <%= render partial: "message", collection: @messages %>
 </div>
 
 <%# チャットフォーム部 %>
